@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | Bangladesh Railway</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --rail-green: #006a4e; --rail-deep: #07513f; --rail-gold: #d3a42f; --ink: #253633; --mist: #f2f8f7; }
+        body { min-width: 320px; color: var(--ink); background: var(--mist); font-family: "Segoe UI", Tahoma, sans-serif; }
+        .top-line { height: 5px; background: linear-gradient(90deg, var(--rail-green) 0 72%, var(--rail-gold) 72% 100%); }
+        .brand-mark { width: 55px; height: 55px; object-fit: contain; }
+        .brand-name { color: var(--rail-deep); font-family: Georgia, serif; font-size: 1.08rem; line-height: 1.1; }
+        .brand-tagline { color: #688078; font-size: .7rem; letter-spacing: .04em; }
+        .header-link { color: var(--rail-green); text-decoration: none; font-weight: 600; }
+        .header-link:hover { color: var(--rail-deep); }
+        .site-nav { background: var(--rail-deep); }
+        .site-nav .nav-link { color: rgba(255,255,255,.8); font-size: .9rem; }
+        .site-nav .nav-link:hover, .site-nav .nav-link.active { color: #fff; }
+        .page-field { min-height: 38rem; background: radial-gradient(circle at 15% 20%, rgba(211,164,47,.14), transparent 25rem), linear-gradient(135deg, #e7f3f0, #f7fbfa); }
+        .eyebrow { color: var(--rail-green); font-size: .76rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+        .title { color: var(--rail-deep); font-family: Georgia, serif; }
+        .form-card { border: 0; border-radius: .75rem; box-shadow: 0 .8rem 2.5rem rgba(27,75,62,.12); }
+        .form-label { color: #49635c; font-size: .84rem; font-weight: 600; }
+        .form-control { border-color: #d6e4df; min-height: 47px; }
+        .form-control:focus { border-color: var(--rail-green); box-shadow: 0 0 0 .2rem rgba(0,106,78,.12); }
+        .btn-rail { border: 0; background: var(--rail-green); color: #fff; font-weight: 700; }
+        .btn-rail:hover { background: var(--rail-deep); color: #fff; }
+        .payment-strip { background: #fff; }
+        .payment-logo { display: inline-flex; align-items: center; justify-content: center; min-width: 8rem; height: 3.25rem; border: 1px solid #dce9e4; border-radius: .5rem; background: #fff; font-weight: 800; box-shadow: 0 .25rem .8rem rgba(27,75,62,.05); margin: .5rem; }
+        .footer { background: var(--rail-deep); color: #d8e8e1; }
+        .footer a { color: #fff; text-decoration: none; }
+        .footer small { color: #a9c5ba; }
+    </style>
+</head>
+<body>
+    <div class="top-line"></div>
+    <header class="bg-white border-bottom">
+        <nav class="container d-flex align-items-center justify-content-between py-3">
+            <a href="index.HTML" class="d-flex align-items-center gap-3 text-decoration-none">
+                <img src="unnamed.png" class="brand-mark" alt="Bangladesh Railway logo">
+                <span><span class="brand-name d-block"><strong>Bangladesh Railway</strong></span><span class="brand-tagline d-block">নিরাপদ · আরামদায়ক · সাশ্রয়ী</span></span>
+            </a>
+            <a href="help-support.html" class="header-link d-none d-sm-inline">Help &amp; Support</a>
+        </nav>
+        <nav class="site-nav navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#serviceNav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="serviceNav">
+                    <ul class="navbar-nav gap-md-3 py-2 py-md-0">
+                        <li class="nav-item"><a class="nav-link active" href="login-new.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="bangladeshRailway.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="train-schedule.html">Train Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="train-information.html">Train Information</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us-new.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="page-field py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-lg-5">
+                    <div class="card form-card p-4 p-md-5">
+                        <p class="eyebrow mb-3">Welcome back</p>
+                        <h1 class="title h2 mb-2">Login to your account</h1>
+                        <p class="text-secondary small mb-4">Access your Bangladesh Railway ticketing account and manage your journeys.</p>
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email or mobile number</label>
+                                <input type="text" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="text-end mb-4">
+                                <a href="#" class="small link-success text-decoration-none">Forgot password?</a>
+                            </div>
+                            <button class="btn btn-rail w-100 py-3" type="submit">Login</button>
+                        </form>
+                        <p class="small text-center text-secondary border-top pt-4 mt-4 mb-0">New to Bangladesh Railway? <a href="bangladeshRailway.html" class="link-success fw-semibold text-decoration-none">Register now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+       <section class="payment-strip border-top py-4">
+        <div class="container text-center">
+            <p class="eyebrow mb-3">Secure payment partners</p>
+            <div class="d-flex flex-wrap justify-content-center align-items-center">
+                <div class="payment-logo"><strong style="color: #1a4292;"><img src="American logo.png" alt="city bank " style="width: 50px; height: 50px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #1a4292;"><img src="city bank logo.png" alt="city bank " style="width: 60px; height: 50px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #e84b3c;"><img src="Dbbl.png" alt="dbbl " style="width: 70px; height: 50px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #FF6B35;"><img src="Bkash-logo.png" alt="Bkash " style="width: 70px; height: 50px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #FF0000;"><img src="nagad-logo.png" alt="nagad " style="width: 80px; height: 50px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #6C63FF;"><img src="rocket logo.webp" alt="rockrt " style="width: 70px; height: 70px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #00B140;"><img src="upay logo.png" alt="upay " style="width: 50px; height: 50px;" ></strong></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <p class="fw-bold mb-2">Bangladesh Railway</p>
+                    <p class="small">নিরাপদ · আরামদায়ক · সাশ্রয়ী</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <p class="fw-bold mb-2">Quick Links</p>
+                    <ul class="list-unstyled small">
+                         <li><a href="index.HTML">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="train-schedule.html">Train Schedule</a></li>
+                        <li><a href="train-information-new.html">Train Information</a></li>
+                        <li><a href="help-support.html">Help & Support</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="small">Email: <a href="mailto:supporteticket@railway.gov.bd">supporteticket@railway.gov.bd</a></p>
+                    <p class="small">Phone: +8801568986731</p>
+                    <p class="small">Phone: +8801567302915</p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,.1);">
+            <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small">
+                <small>© 2026 Bangladesh Railway. All rights reserved.</small>
+                <div class="d-flex gap-3 small">
+                    <a href="terms-and-conditions.html">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

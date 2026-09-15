@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help & Support | Bangladesh Railway</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --rail-green: #006a4e; --rail-deep: #07513f; --rail-gold: #d3a42f; --ink: #253633; --mist: #f2f8f7; }
+        body { min-width: 320px; color: var(--ink); background: var(--mist); font-family: "Segoe UI", Tahoma, sans-serif; }
+        .top-line { height: 5px; background: linear-gradient(90deg, var(--rail-green) 0 72%, var(--rail-gold) 72% 100%); }
+        .brand-mark { width: 55px; height: 55px; object-fit: contain; }
+        .brand-name { color: var(--rail-deep); font-family: Georgia, serif; font-size: 1.08rem; line-height: 1.1; }
+        .brand-tagline { color: #688078; font-size: .7rem; letter-spacing: .04em; }
+        .header-link { color: var(--rail-green); font-size: .9rem; text-decoration: none; font-weight: 600; }
+        .header-link:hover { color: var(--rail-deep); }
+        .site-nav { background: var(--rail-deep); }
+        .site-nav .nav-link { color: rgba(255, 255, 255, .8); font-size: .9rem; }
+        .site-nav .nav-link:hover, .site-nav .nav-link.active { color: #fff; }
+        .page-field { padding: 3rem 0; background: linear-gradient(135deg, #e7f3f0, #f7fbfa 58%, #edf5f1); }
+        .eyebrow { color: var(--rail-green); font-size: .76rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+        .title { color: var(--rail-deep); font-family: Georgia, serif; }
+        .card { border: 0; border-radius: .75rem; box-shadow: 0 .4rem 1.5rem rgba(27, 75, 62, .1); margin-bottom: 2rem; }
+        .card h5 { color: var(--rail-deep); font-weight: 700; }
+        .faq-item { background: #fff; padding: 1.5rem; margin-bottom: 1rem; border-radius: .75rem; border-left: 4px solid var(--rail-gold); }
+        .faq-question { cursor: pointer; font-weight: 600; color: var(--rail-deep); display: flex; justify-content: space-between; align-items: center; }
+        .faq-answer { display: none; margin-top: 1rem; color: #5d706b; line-height: 1.6; }
+        .faq-answer.show { display: block; }
+        .contact-info { background: #fff; padding: 2rem; border-radius: .75rem; }
+        .contact-info h5 { color: var(--rail-deep); font-weight: 700; margin-bottom: 1rem; }
+        .btn-rail { border: 0; background: var(--rail-green); color: #fff; font-weight: 700; }
+        .btn-rail:hover { background: var(--rail-deep); color: #fff; }
+        .form-label { color: #49635c; font-size: .84rem; font-weight: 600; }
+        .form-control { border-color: #d6e4df; min-height: 47px; }
+        .form-control:focus { border-color: var(--rail-green); box-shadow: 0 0 0 .2rem rgba(0, 106, 78, .12); }
+        .payment-strip { background: #fff; border-top: 1px solid #e5e5e5; }
+        .payment-logo { display: inline-flex; align-items: center; justify-content: center; min-width: 8rem; height: 3.25rem; border: 1px solid #dce9e4; border-radius: .5rem; background: #fff; font-weight: 800; letter-spacing: -.04em; box-shadow: 0 .25rem .8rem rgba(27, 75, 62, .05); margin: .5rem; }
+        .footer { background: var(--rail-deep); color: #d8e8e1; }
+        .footer a { color: #fff; text-decoration: none; }
+        .icon-box { text-align: center; padding: 2rem; background: #fff; border-radius: .75rem; margin-bottom: 1.5rem; }
+        .icon-box-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="top-line"></div>
+    <header class="bg-white border-bottom">
+        <nav class="container d-flex align-items-center justify-content-between py-3">
+            <a href="index.HTML" class="d-flex align-items-center gap-3 text-decoration-none">
+                <img src="unnamed.png" class="brand-mark" alt="Bangladesh Railway logo">
+                <span><span class="brand-name d-block"><strong>Bangladesh Railway</strong></span><span class="brand-tagline d-block">নিরাপদ · আরামদায়ক · সাশ্রয়ী</span></span>
+            </a>
+            <a href="help-support.html" class="header-link">Help &amp; Support</a>
+        </nav>
+        <nav class="site-nav navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#serviceNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="serviceNav">
+                    <ul class="navbar-nav gap-md-3 py-2 py-md-0">
+                        <li class="nav-item"><a class="nav-link" href="index.HTML">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login-new.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="bangladeshRailway.html">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="train-schedule.html">Train Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link" href="train-information.html">Train Information</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us-new.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-field">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="eyebrow mb-3">We're Here to Help</p>
+                <h1 class="title display-5 mb-3">Help & Support Center</h1>
+                <p class="text-secondary">Get answers to your questions and resolve issues quickly</p>
+            </div>
+
+            <!-- Quick Support Options -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-3">
+                    <div class="icon-box">
+                        <div class="icon-box-icon">📱</div>
+                        <h5>Call Us</h5>
+                        <p class="small text-secondary">Mon-Fri 9AM-6PM</p>
+                        <p class="fw-bold" style="color: var(--rail-green);">16060</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon-box">
+                        <div class="icon-box-icon">✉️</div>
+                        <h5>Email Us</h5>
+                        <p class="small text-secondary">We'll respond in 24 hours</p>
+                        <p class="fw-bold"><a href="mailto:support@eticket.railway.gov.bd" style="color: var(--rail-green); text-decoration: none;">support@eticket.railway.gov.bd</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon-box">
+                        <div class="icon-box-icon">💬</div>
+                        <h5>Live Chat</h5>
+                        <p class="small text-secondary">Available during office hours</p>
+                        <button class="btn btn-sm btn-rail">Start Chat</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon-box">
+                        <div class="icon-box-icon">📍</div>
+                        <h5>Visit Us</h5>
+                        <p class="small text-secondary">Dhaka, Bangladesh</p>
+                        <p class="fw-bold"><a href="#" style="color: var(--rail-green); text-decoration: none;">Find Office</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="title h3 mb-4">Frequently Asked Questions</h2>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How do I book a train ticket?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To book a train ticket:</p>
+                            <ol class="ps-3">
+                                <li>Visit the home page and search for trains by selecting origin and destination</li>
+                                <li>Choose your preferred train and date</li>
+                                <li>Select your desired seats</li>
+                                <li>Proceed to payment using credit/debit card or mobile payment services</li>
+                                <li>Receive your e-ticket confirmation via email</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>What payment methods do you accept?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept multiple payment methods including:</p>
+                            <ul class="ps-3">
+                                <li>Debit/Credit Cards: Visa, MasterCard, AMEX, Nexus</li>
+                                <li>Mobile Financial Services: bKash, Nagad, Rocket, Upay, Tap</li>
+                                <li>Internet Banking: DBBL and other banks</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>Can I cancel or modify my booking?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can cancel or modify your booking up to 24 hours before departure. The refund process:</p>
+                            <ul class="ps-3">
+                                <li>Login to your account</li>
+                                <li>Go to "My Bookings"</li>
+                                <li>Select the ticket and choose "Cancel" or "Modify"</li>
+                                <li>Cancellation charges may apply</li>
+                                <li>Refund will be processed within 5-7 business days</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How far in advance can I book tickets?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can book train tickets up to 10 days in advance. This allows you to plan your journey ahead while ensuring availability and ensuring timely processing of your booking.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>What if my payment fails?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If your payment fails:</p>
+                            <ul class="ps-3">
+                                <li>Check your account balance and card status</li>
+                                <li>Ensure correct payment details are entered</li>
+                                <li>Try alternative payment method</li>
+                                <li>Contact your bank if card is blocked</li>
+                                <li>Any deducted amount will be refunded within 8 business days</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>What are the different class types available?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>AC Berth (AC-B):</strong> AC cabin berth for nighttime travel</p>
+                            <p><strong>AC Seat (AC-S):</strong> AC cabin seat for daytime travel</p>
+                            <p><strong>Snigdha:</strong> Premium AC chair car</p>
+                            <p><strong>First Class Berth:</strong> Non-AC cabin berth for nighttime</p>
+                            <p><strong>First Class Seat:</strong> Non-AC cabin seat for daytime</p>
+                            <p><strong>Shovan Chair:</strong> Non-AC chair car</p>
+                            <p><strong>Shovan:</strong> Non-AC flat bench seat</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>How do I download my e-ticket?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Your e-ticket will be sent to your registered email address. You can also:</p>
+                            <ul class="ps-3">
+                                <li>Login to your account</li>
+                                <li>Go to "Purchase History" or "My Bookings"</li>
+                                <li>Click on the booking to view ticket details</li>
+                                <li>Click "Download Ticket" to save PDF</li>
+                                <li>Check your spam/junk folder if email not received</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <span>What should I do if I lose my ticket?</span>
+                            <span>+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If you lose your physical or e-ticket:</p>
+                            <ul class="ps-3">
+                                <li>Login to your account and download the ticket again</li>
+                                <li>Contact support with your booking reference number</li>
+                                <li>Bring a valid ID to the station counter for verification</li>
+                                <li>You can board the train with proper identification matching the booking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="title h3 mb-4">Contact Us</h2>
+                    <div class="contact-info">
+                        <form>
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-control" id="subject" required>
+                                    <option>Select a subject</option>
+                                    <option>Booking Issue</option>
+                                    <option>Payment Issue</option>
+                                    <option>Ticket Related</option>
+                                    <option>Refund Request</option>
+                                    <option>Account Issue</option>
+                                    <option>General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Please describe your issue or question" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-rail w-100 py-3">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Payment Methods Section -->
+       <section class="payment-strip border-top py-4">
+        <div class="container text-center">
+            <p class="eyebrow mb-3">Secure payment partners</p>
+            <div class="d-flex flex-wrap justify-content-center align-items-center">
+                <div class="payment-logo"><strong style="color: #1a4292;"><img src="American logo.png" alt="city bank " style="width: 50px; height: 50px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #1a4292;"><img src="city bank logo.png" alt="city bank " style="width: 60px; height: 50px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #e84b3c;"><img src="Dbbl.png" alt="dbbl " style="width: 70px; height: 50px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #FF6B35;"><img src="Bkash-logo.png" alt="Bkash " style="width: 70px; height: 50px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #FF0000;"><img src="nagad-logo.png" alt="nagad " style="width: 80px; height: 50px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #6C63FF;"><img src="rocket logo.webp" alt="rockrt " style="width: 70px; height: 70px;" ></strong></div>
+                <div class="payment-logo"><strong style="color: #00B140;"><img src="upay logo.png" alt="upay " style="width: 50px; height: 50px;" ></strong></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <p class="fw-bold mb-2">Bangladesh Railway</p>
+                    <p class="small">নিরাপদ · আরামদায়ক · সাশ্রয়ী</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <p class="fw-bold mb-2">Quick Links</p>
+                    <ul class="list-unstyled small">
+                         <li><a href="index.HTML">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="train-schedule.html">Train Schedule</a></li>
+                        <li><a href="train-information-new.html">Train Information</a></li>
+                        <li><a href="help-support.html">Help & Support</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="small">Email: <a href="mailto:supporteticket@railway.gov.bd">supporteticket@railway.gov.bd</a></p>
+                    <p class="small">Phone: +8801568986731</p>
+                    <p class="small">Phone: +8801567302915</p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,.1);">
+            <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small">
+                <small>© 2026 Bangladesh Railway. All rights reserved.</small>
+                <div class="d-flex gap-3 small">
+                    <a href="terms-and-conditions.html">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('span:last-child');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer.show').forEach(item => {
+                if (item !== answer) {
+                    item.classList.remove('show');
+                    item.previousElementSibling.querySelector('span:last-child').textContent = '+';
+                }
+            });
+            
+            // Toggle current FAQ
+            answer.classList.toggle('show');
+            icon.textContent = answer.classList.contains('show') ? '−' : '+';
+        }
+    </script>
+</body>
+</html>
